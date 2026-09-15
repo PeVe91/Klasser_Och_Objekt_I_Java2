@@ -29,18 +29,14 @@ public class Character {
         this.health = health;
     }
 
-    public int takeDamage(int amount) {
+    public void takeDamage(int amount) {
         this.health -= amount;
-        setHealth(health);
-
-        return this.health;
+        setHealth(this.health);
     }
 
-    public int heal(int amount) {
+    public void heal(int amount) {
         this.health += amount;
-        setHealth(health);
-
-        return this.health;
+        setHealth(this.health);
     }
 
     public boolean isAlive() {
