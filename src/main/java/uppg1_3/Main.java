@@ -21,14 +21,14 @@ public class Main {
 
         while (true) {
             int heal = Integer.parseInt(IO.readln
-                    ("Enter a number to heal your hero: "));
-
+                    ("Enter a number to heal your hero. Enter 0 to quit the game."));
+            if (heal == 0) {
+                break;
+            }
             c1.setHealth(c1.getHealth() + heal);
 
             IO.println("Current health: " + c1.getHealth());
 
         }
-
-
     }
 }
