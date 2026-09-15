@@ -11,12 +11,13 @@ public class Main {
             int damage = Integer.parseInt(IO.readln
                     ("Enter a number to damage your hero: "));
             c1.takeDamage(damage);
-            IO.println("Current health: " + c1.getHealth());
+            IO.println("\nCurrent health:\n" + c1.getHealth() + "\n");
         }
 
-        IO.println("You are dead.");
+        IO.println("You are dead.\n" +
+                "You have been revived with 1 HP.\n");
 
-        c1.setHealth(c1.getMaxHealth() -250);
+        c1.setHealth(1);
 
         while (true) {
             int heal = Integer.parseInt(IO.readln
@@ -26,7 +27,7 @@ public class Main {
             }
             c1.heal(heal);
 
-            IO.println("Current health: " + c1.getHealth());
+            IO.println("\nCurrent health:\n" + c1.getHealth() + "\n");
         }
         /* Utan klassens metoder
         while (c1.isAlive()) {
