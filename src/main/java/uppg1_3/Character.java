@@ -3,7 +3,7 @@ package uppg1_3;
 public class Character {
 
     private int health;
-    private int maxHealth;
+    private final int maxHealth;
 
     public Character(int maxHealth) {
         this.maxHealth = maxHealth;
@@ -13,9 +13,9 @@ public class Character {
     public int getMaxHealth() {
         return maxHealth;
     }
-    public void setMaxHealth(int maxHealth) {
-        this.maxHealth = maxHealth;
-    }
+    //public void setMaxHealth(int maxHealth) {
+        //this.maxHealth = maxHealth;
+    //}
 
     public int getHealth() {
         return health;

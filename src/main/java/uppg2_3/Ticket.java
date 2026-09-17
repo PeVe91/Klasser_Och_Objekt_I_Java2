@@ -7,7 +7,7 @@ public class Ticket {
     public Ticket() {
         this.eventName = "Unknown";
     }
-    public Ticket( String eventName) {
+    public Ticket(String eventName) {
         this.eventName = eventName;
 
     }

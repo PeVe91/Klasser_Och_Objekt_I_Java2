@@ -69,7 +69,7 @@ public class Triangle {
         //--------------------------------------------------------------
     }
 
-    public Triangle copyOf(Triangle orig) {
+    public static Triangle copyOf(Triangle orig) {
         return new Triangle(orig);
     }
 }
